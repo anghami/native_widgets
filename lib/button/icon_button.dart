@@ -24,8 +24,8 @@ class NativeIconButton extends StatelessWidget {
       key: key,
       widgetKey: widgetKey,
       icon: icon,
-      iosIcon: iosIcon,
-      androidIcon: icon,
+      cupertinoIcon: iosIcon,
+      materialIcon: icon,
       onPressed: onPressed,
       color: color,
     );

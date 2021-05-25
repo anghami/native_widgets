@@ -30,22 +30,22 @@ class NativeSearchWidget extends AnimatedWidget {
   @override
   Widget build(BuildContext context) {
     return PlatformWidget(
-      android: (BuildContext context) => MaterialSearchBar(
-            search: search,
-            isSearching: isSearching,
-            onSearchChanged: onChanged,
-          ),
-      ios: (BuildContext context) => CupertinoSearchBar(
-            enabled: enabled,
-            onChanged: onChanged,
-            onCancel: onCancel,
-            onClear: onClear,
-            onSubmitted: onSubmitted,
-            animation: animation,
-            controller: controller,
-            autoFocus: autoFocus,
-            focusNode: focusNode,
-          ),
+      material: (BuildContext context, _) => MaterialSearchBar(
+        search: search,
+        isSearching: isSearching,
+        onSearchChanged: onChanged,
+      ),
+      cupertino: (BuildContext context, _) => CupertinoSearchBar(
+        enabled: enabled,
+        onChanged: onChanged,
+        onCancel: onCancel,
+        onClear: onClear,
+        onSubmitted: onSubmitted,
+        animation: animation,
+        controller: controller,
+        autoFocus: autoFocus,
+        focusNode: focusNode,
+      ),
     );
   }
 }

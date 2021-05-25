@@ -33,33 +33,35 @@ class NativeSearchAppBar extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
+    CupertinoIconButtonData button = CupertinoIconButtonData();
     if (isSearching) {
       return PlatformAppBar(
         title: title,
         backgroundColor: backgroundColor,
         leading: leading,
-        android: (BuildContext context) => MaterialAppBarData(
-                title: MaterialSearchBar(
-                  search: search,
-                  onSearchChanged: onChanged,
-                ),
-                actions: <Widget>[
-                  PlatformIconButton(
-                    icon: const Icon(Icons.search),
-                    iosIcon: const Icon(CupertinoIcons.search),
-                    onPressed: onSearchPressed,
-                  ),
-                ]),
-        ios: (BuildContext context) => CupertinoNavigationBarData(
-              title: CupertinoSearchWidget(
-                initialValue: search,
-                onChanged: onChanged,
-                alwaysShowAppBar: alwaysShowSearchBar,
-                onCancel: onSearchPressed,
-              ),
-              transitionBetweenRoutes: ios?.transitionBetweenRoutes,
-              heroTag: ios?.heroTag,
+        material: (BuildContext context, _) => MaterialAppBarData(
+            title: MaterialSearchBar(
+              search: search,
+              onSearchChanged: onChanged,
             ),
+            actions: <Widget>[
+              PlatformIconButton(
+                icon: const Icon(Icons.search),
+                cupertino: (_, __) =>
+                    CupertinoIconButtonData(icon: Icon(CupertinoIcons.search)),
+                onPressed: onSearchPressed,
+              ),
+            ]),
+        cupertino: (BuildContext context, _) => CupertinoNavigationBarData(
+          title: CupertinoSearchWidget(
+            initialValue: search,
+            onChanged: onChanged,
+            alwaysShowAppBar: alwaysShowSearchBar,
+            onCancel: onSearchPressed,
+          ),
+          transitionBetweenRoutes: ios?.transitionBetweenRoutes,
+          heroTag: ios?.heroTag,
+        ),
       );
     }
 
@@ -74,8 +76,8 @@ class NativeSearchAppBar extends StatelessWidget
           onPressed: onSearchPressed,
         ),
       ]..addAll(actions ?? []),
-      ios: (BuildContext context) => ios,
-      android: (BuildContext context) => android,
+      cupertino: (BuildContext context, _) => ios,
+      material: (BuildContext context, _) => android,
     );
   }
 }

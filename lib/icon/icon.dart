@@ -10,8 +10,8 @@ class NativeIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return PlatformWidget(
       key: key,
-      ios: (BuildContext contesxt) => Icon(iosIcon ?? iconData),
-      android: (BuildContext contesxt) => Icon(iconData),
+      cupertino: (BuildContext context, _) => Icon(iosIcon ?? iconData),
+      material: (BuildContext context, _) => Icon(iconData),
     );
   }
 }

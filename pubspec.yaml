@@ -6,7 +6,7 @@ homepage: https://github.com/fluttercommunity/native_widgets
 maintainer: Rody Davis (@rodydavis)
 
 environment:
-  sdk: ">=2.0.0 <3.0.0"
+  sdk: ">=2.10.0 <3.0.0"
 
 dependencies:
   flutter:

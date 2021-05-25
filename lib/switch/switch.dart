@@ -17,19 +17,19 @@ class NativeSwitch extends StatelessWidget {
   Widget build(BuildContext context) {
     return PlatformWidget(
       key: key,
-      ios: (BuildContext context) => CupertinoSwitch(
-            key: key,
-            value: value,
-            onChanged: onChanged,
-            activeColor:
-                activeColor == null ? CupertinoColors.activeGreen : activeColor,
-          ),
-      android: (BuildContext context) => Switch(
-            key: key,
-            value: value,
-            onChanged: onChanged,
-            activeColor: activeColor,
-          ),
+      cupertino: (BuildContext context, _) => CupertinoSwitch(
+        key: key,
+        value: value,
+        onChanged: onChanged,
+        activeColor:
+            activeColor == null ? CupertinoColors.activeGreen : activeColor,
+      ),
+      material: (BuildContext context, _) => Switch(
+        key: key,
+        value: value,
+        onChanged: onChanged,
+        activeColor: activeColor,
+      ),
     );
   }
 }
