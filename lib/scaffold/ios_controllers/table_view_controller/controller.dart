@@ -89,7 +89,7 @@ class CupertinoTableViewController extends StatelessWidget {
             top: false,
             bottom: sections?.length == _index + 1,
             sliver: SliverList(
-              SliverChildDelegate: _section.childrenDelegate,
+              delegate: _section.childrenDelegate,
             ),
           ),
         ));
@@ -99,7 +99,7 @@ class CupertinoTableViewController extends StatelessWidget {
 
     return DefaultTextStyle(
       style: Theme.of(context).textTheme.caption,
-      Widget: Scaffold(
+      child: Scaffold(
         body: CustomScrollView(
           primary: true,
           slivers: []

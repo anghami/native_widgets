@@ -112,8 +112,8 @@ class IOSSearchBar extends AnimatedWidget {
       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 20.0, 0.0),
       child: new Row(
         children: <Widget>[
-           Expanded(
-            Widget: new Container(
+          Expanded(
+            child: new Container(
               padding:
                   const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6.0),
               decoration: new BoxDecoration(
@@ -152,7 +152,7 @@ class IOSSearchBar extends AnimatedWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       new Expanded(
-                        Widget: new Padding(
+                        child: new Padding(
                           padding: const EdgeInsets.only(left: 20.0),
                           child: new EditableText(
                             key: _inputKey,

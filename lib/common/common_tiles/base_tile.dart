@@ -190,7 +190,7 @@ class CupertinoBaseTile extends StatelessWidget {
                     : null,
                 child: editing ? _editingAction : null,
               ),
-              Expanded(Widget: child),
+              Expanded(child: child),
             ]..addAll(_widgets ?? <Widget>[]),
           ),
         ),

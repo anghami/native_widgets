@@ -45,7 +45,7 @@ class NativeSelection extends StatelessWidget {
             color: CupertinoColors.black,
             fontSize: 22.0,
           ),
-          Widget: new GestureDetector(
+          child: new GestureDetector(
             // Blocks taps from propagating to the modal sheet and popping.
             onTap: () {},
             child: new SafeArea(
@@ -54,7 +54,7 @@ class NativeSelection extends StatelessWidget {
                 itemExtent: _kPickerItemHeight,
                 backgroundColor: CupertinoColors.white,
                 onSelectedItemChanged: (int index) => onChanged(items[index]),
-                List: new List<Widget>.generate(items.length, (int index) {
+                children: new List<Widget>.generate(items.length, (int index) {
                   return new Center(
                       child: new Text(
                     items[index],
@@ -75,7 +75,7 @@ class NativeSelection extends StatelessWidget {
             .map(
               (String item) => DropdownMenuItem<String>(
                   value: item,
-                  Widget: SizedBox(
+                  child: SizedBox(
 //                      width: 200.0,
                       child: Text(
                     item,

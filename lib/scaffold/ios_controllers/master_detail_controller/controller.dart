@@ -77,7 +77,7 @@ class CupertinoMasterDetailController extends StatelessWidget {
         children: <Widget>[
           Flexible(
             flex: orientation == Orientation.landscape ? 1 : 2,
-            Widget: Scaffold(
+            child: Scaffold(
               appBar: appBar,
               body: _ItemListing(
                 onEmpty: onEmpty,
@@ -95,7 +95,7 @@ class CupertinoMasterDetailController extends StatelessWidget {
           ),
           Flexible(
             flex: 3,
-            Widget: detailBuilder(context, selectedItem, true),
+            child: detailBuilder(context, selectedItem, true),
           ),
         ],
       );
@@ -142,7 +142,7 @@ class _ItemListing extends StatelessWidget {
     }
 
     return SliverList(
-      SliverChildDelegate: SliverChildBuilderDelegate(
+      delegate: SliverChildBuilderDelegate(
         (BuildContext context, int index) {
           final _child = itemBuilder(context, index);
           return GestureDetector(
