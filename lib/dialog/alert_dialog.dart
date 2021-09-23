@@ -7,18 +7,18 @@ Future<T> showNativeDialog<T>({
   if (Platform.isIOS) {
     if (child?.ios?.showActionSheet ?? false) {
       return showCupertinoModalPopup<T>(
-        BuildContext: context,
-        builder: (BuildContext context) => child,
+        context: context,
+        builder: (context) => child,
       );
     } else {
       return showCupertinoDialog<T>(
-        BuildContext: context,
+        context: context,
         builder: (BuildContext context) => child,
       );
     }
   }
   return showDialog<T>(
-    BuildContext: context,
+    context: context,
     builder: (BuildContext context) => child,
   );
 }

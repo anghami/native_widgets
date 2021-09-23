@@ -43,13 +43,13 @@ class CupertinoPhoneListTile extends StatelessWidget {
                   : null,
             ),
             Expanded(
-              Widget: Container(
+              child: Container(
                 padding:
                     const EdgeInsets.only(left: 1.0, bottom: 0.0, right: 10.0),
                 child: Row(
                     children: <Widget>[
                   Expanded(
-                    Widget: Column(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
@@ -86,13 +86,13 @@ class CupertinoPhoneListTile extends StatelessWidget {
                   : null,
             ),
             Expanded(
-              Widget: Container(
+              child: Container(
                 padding:
                     const EdgeInsets.only(left: 1.0, bottom: 9.0, right: 10.0),
                 child: Row(
                     children: <Widget>[
                   Expanded(
-                    Widget: Column(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[

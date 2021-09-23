@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0dce2eb-85b3-48e6-9df5-5351e4525b64" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common/common_tiles/avatar_title.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/common_tiles/avatar_title.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common/common_tiles/base_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/common_tiles/base_tile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common/common_tiles/phone_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/common_tiles/phone_tile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common/search/cupertino_search_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/search/cupertino_search_bar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common/text.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/text.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/dialog/alert_dialog.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dialog/alert_dialog.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/picker/picker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/picker/picker.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/picker/selection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/picker/selection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scaffold/ios_controllers/master_detail_controller/controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scaffold/ios_controllers/master_detail_controller/controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/scaffold/ios_controllers/table_view_controller/controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scaffold/ios_controllers/table_view_controller/controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/ios_search_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/ios_search_bar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/native_widgets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/native_widgets.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,9 +82,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2065" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1632389712714">
+    <state x="2065" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1632390793464">
       <screen x="1440" y="-72" width="1920" height="1080" />
     </state>
-    <state x="2065" y="169" width="670" height="676" key="search.everywhere.popup/1440.-72.1920.1080/0.0.1440.900@1440.-72.1920.1080" timestamp="1632389712714" />
+    <state x="2065" y="169" width="670" height="676" key="search.everywhere.popup/1440.-72.1920.1080/0.0.1440.900@1440.-72.1920.1080" timestamp="1632390793464" />
   </component>
 </project>
