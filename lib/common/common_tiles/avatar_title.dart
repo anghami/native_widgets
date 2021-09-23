@@ -24,7 +24,7 @@ class CupertinoAvatarListTile extends StatelessWidget {
         child: avatar,
       ),
       Expanded(
-        child: Padding(
+        Widget: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12.0),
           child: subtitle == null
               ? NativeText(title, type: NativeTextTheme.title)

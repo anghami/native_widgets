@@ -27,14 +27,14 @@ class NativeText extends StatelessWidget {
               data,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.caption,
             );
           case NativeTextTheme.subtitle:
             return Text(
               data,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: Theme.of(context).textTheme.subtitle,
+              style: Theme.of(context).textTheme.subtitle1,
             );
           case NativeTextTheme.detail:
             return Text(
@@ -44,7 +44,7 @@ class NativeText extends StatelessWidget {
           case NativeTextTheme.custom:
             return Text(
               data,
-              style: style ?? Theme.of(context).textTheme.title,
+              style: style ?? Theme.of(context).textTheme.caption,
             );
         }
         return Text(

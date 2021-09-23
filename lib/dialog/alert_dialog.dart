@@ -7,18 +7,18 @@ Future<T> showNativeDialog<T>({
   if (Platform.isIOS) {
     if (child?.ios?.showActionSheet ?? false) {
       return showCupertinoModalPopup<T>(
-        context: context,
+        BuildContext: context,
         builder: (BuildContext context) => child,
       );
     } else {
       return showCupertinoDialog<T>(
-        context: context,
+        BuildContext: context,
         builder: (BuildContext context) => child,
       );
     }
   }
   return showDialog<T>(
-    context: context,
+    BuildContext: context,
     builder: (BuildContext context) => child,
   );
 }
@@ -90,7 +90,7 @@ class NativeDialog<T> extends StatelessWidget {
               title: title,
               content: content,
               actions: actions
-                  .map((NativeDialogAction item) => FlatButton(
+                  .map((NativeDialogAction item) => TextButton(
                         child: Text(
                           item.text?.data,
                           style: TextStyle(

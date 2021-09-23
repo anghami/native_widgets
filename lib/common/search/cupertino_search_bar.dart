@@ -40,7 +40,7 @@ class CupertinoSearchBar extends AnimatedWidget {
       child: new Row(
         children: <Widget>[
           new Expanded(
-            child: new Container(
+            Widget: new Container(
               padding:
                   const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6.0),
               decoration: new BoxDecoration(
@@ -79,7 +79,7 @@ class CupertinoSearchBar extends AnimatedWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       new Expanded(
-                        child: new Padding(
+                        Widget: new Padding(
                           padding: const EdgeInsets.only(left: 20.0),
                           child: enabled
                               ? new EditableText(
